@@ -7,6 +7,10 @@
 .page__container {
 	display: grid;
 	grid-template-columns: rem(350) 1fr;
+
+	@media (max-width: $mobile) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .left {
@@ -183,9 +187,18 @@
 	&__block {
 		display: grid;
 		grid-template-columns: rem(200) 1fr;
+
+		@media (max-width: $tablet) {
+			grid-template-columns: 1fr;
+			margin-bottom: rem(15);
+		}
 	}
 
-	&__left-block {}
+	&__left-block {
+		@media (max-width: $tablet) {
+			margin-bottom: rem(15);
+		}
+	}
 
 	&__date {
 		font-size: rem(14);
@@ -217,6 +230,10 @@
 		display: grid;
 		grid-template-columns: rem(200) 1fr;
 		align-items: center;
+
+		@media (max-width: $mobile) {
+			grid-template-columns: rem(150) 1fr;
+		}
 	}
 
 	&__name {}
@@ -239,6 +256,10 @@
 	&__block {
 		display: grid;
 		grid-template-columns: rem(20) 1fr;
+
+		@media (max-width: $mobileSmall) {
+			margin-bottom: rem(15);
+		}
 	}
 
 	&__name {
@@ -248,5 +269,10 @@
 	&__items {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: 1fr;
+			margin-bottom: rem(15);
+		}
 	}
 }
