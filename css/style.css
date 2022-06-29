@@ -10881,6 +10881,42 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 61.99875em) {
+  .experience__block {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-bottom: 0.9375rem;
+  }
+
+  .experience__left-block {
+    margin-bottom: 0.9375rem;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .page__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .skills__block {
+    -ms-grid-columns: 9.375rem 1fr;
+    grid-template-columns: 9.375rem 1fr;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .interest__block {
+    margin-bottom: 0.9375rem;
+  }
+
+  .interest__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-bottom: 0.9375rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .fa-beat,
   .fa-bounce,
